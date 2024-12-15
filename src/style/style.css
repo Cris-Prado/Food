@@ -23,7 +23,11 @@
     text-transform: capitalize;
 }
 
-.wapper-user{
+.main{
+    display: flex;
+    justify-content: center;
+}
+.wapper-user{   
     border-radius: 50%;
 }
 
@@ -42,7 +46,10 @@
 }
 
 .text-promo {
-    width: 60%;
+    width: 65%;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
 }
 .title{
     margin-top: 25px;
@@ -58,11 +65,59 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    align-content: center;
     margin: 25px 0 0 0 ;
-    width: 80%;
-
+    width: 60%;
 }
 
+.mage-promo{
+    position: absolute;
+    bottom: 200px;
+    right: 520px;
+}
+
+.rede-icon{
+    height: 35px;
+    width: 35px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.lin{
+    height: 1px;
+    background-color: black;
+    flex-grow: 1;
+}
+.reservation{
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+.btanc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 2px 15px 2px;
+    background-color: black;
+    color: white;
+    height: 55px;
+    width: 150px;
+}
 @media (max-width: 760px) {
     .nav-bar{
         flex-direction: column;
