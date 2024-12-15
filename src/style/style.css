@@ -1,11 +1,16 @@
 .nav-bar{
-    min-height: 60px;
     width: 100;
     box-shadow: 0 0 10px 2px #EEE;
     display: flex;
     align-items: center;
     padding: 0 25px;
     justify-content: space-around;
+}
+
+.nav-mb{
+    min-height: 60px;
+    align-items: center;
+    display: flex;
 }
 
 .logo{
@@ -26,18 +31,50 @@
     display: flex;
     gap: 10px;
 }
-.search-and-user i{
+.item-ico{
     font-size: 30px;
     cursor: pointer;
     gap: 10px;
 }
 
+.item-ico-md{
+    display: none;
+}
+
+.text-promo {
+    width: 60%;
+}
+.title{
+    margin-top: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pg1{
+    font-family: "Playwrite ES Deco", cursive;
+    text-align: justify;
+}
+
+.home{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin: 25px 0 0 0 ;
+    width: 80%;
+
+}
+
 @media (max-width: 760px) {
+    .nav-bar{
+        flex-direction: column;
+    }
     .nav-mb{
-        display: flex;
+        justify-content: space-around;
+        width: 100%;
         align-items: center;
         flex-direction: row-reverse;
         gap: 0 10px;
+        z-index: 6;
+        background-color: white;
     }
 
     .mobile{
@@ -66,9 +103,29 @@
         bottom: 3px;
         transform: rotate(315deg);
     }
-    .list{
-        display: none;
+
+    .logotipo{
+        display: flex;
+        align-items: center;
     }
 
+    .item-ico-md{
+        display: flex;
+    }
+
+    .list{
+        flex-direction: column;
+        margin-top: -100px;
+        transition: all 0.4s ease-in;
+    }
+
+    .list.active{
+        margin-top: 0;
+        transition: all 0.4s ease-in;
+    }
+
+    .search-and-user{
+        display: none;
+    }
 
 }
