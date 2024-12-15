@@ -8,12 +8,67 @@
     justify-content: space-around;
 }
 
+.logo{
+    font-weight: 750;
+}
+
 .list{
     display: flex;
     gap: 10px;
+    text-transform: capitalize;
 }
 
 .wapper-user{
     border-radius: 50%;
+}
+
+.search-and-user{
+    display: flex;
+    gap: 10px;
+}
+.search-and-user i{
+    font-size: 30px;
+    cursor: pointer;
+    gap: 10px;
+}
+
+@media (max-width: 760px) {
+    .nav-mb{
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 0 10px;
+    }
+
+    .mobile{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        cursor: pointer;
+    }
+
+    .mobile .linha{
+        width: 30px;
+        height: 3px;
+        border-radius: 50px;
+        background-color: black;
+        transition: all 0.4s ease;
+
+    }
+    .active #line1{
+        position: relative;
+        top: 10px;
+        transform: rotate(45deg);
+    }
+
+    .active #line2{
+        position: relative;
+        bottom: 3px;
+        transform: rotate(315deg);
+    }
+    .list{
+        display: none;
+    }
+
 
 }
