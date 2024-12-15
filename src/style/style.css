@@ -1,5 +1,4 @@
 .nav-bar{
-    min-height: 60px;
     width: 100;
     box-shadow: 0 0 10px 2px #EEE;
     display: flex;
@@ -8,12 +7,180 @@
     justify-content: space-around;
 }
 
+.nav-mb{
+    min-height: 60px;
+    align-items: center;
+    display: flex;
+}
+
+.logo{
+    font-weight: 750;
+}
+
 .list{
     display: flex;
     gap: 10px;
+    text-transform: capitalize;
 }
 
-.wapper-user{
+.main{
+    display: flex;
+    justify-content: center;
+}
+.wapper-user{   
     border-radius: 50%;
+}
+
+.search-and-user{
+    display: flex;
+    gap: 10px;
+}
+.item-ico{
+    font-size: 30px;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.item-ico-md{
+    display: none;
+}
+
+.text-promo {
+    width: 65%;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    margin-top: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pg1{
+    font-family: "Playwrite ES Deco", cursive;
+    text-align: justify;
+}
+
+.home{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    margin: 25px 0 0 0 ;
+    width: 60%;
+}
+
+.mage-promo{
+    position: absolute;
+    bottom: 200px;
+    right: 520px;
+}
+
+.rede-icon{
+    height: 35px;
+    width: 35px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.lin{
+    height: 1px;
+    background-color: black;
+    flex-grow: 1;
+}
+.reservation{
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+.btanc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 2px 15px 2px;
+    background-color: black;
+    color: white;
+    height: 55px;
+    width: 150px;
+}
+@media (max-width: 760px) {
+    .nav-bar{
+        flex-direction: column;
+    }
+    .nav-mb{
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 0 10px;
+        z-index: 6;
+        background-color: white;
+    }
+
+    .mobile{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        cursor: pointer;
+    }
+
+    .mobile .linha{
+        width: 30px;
+        height: 3px;
+        border-radius: 50px;
+        background-color: black;
+        transition: all 0.4s ease;
+
+    }
+    .active #line1{
+        position: relative;
+        top: 10px;
+        transform: rotate(45deg);
+    }
+
+    .active #line2{
+        position: relative;
+        bottom: 3px;
+        transform: rotate(315deg);
+    }
+
+    .logotipo{
+        display: flex;
+        align-items: center;
+    }
+
+    .item-ico-md{
+        display: flex;
+    }
+
+    .list{
+        flex-direction: column;
+        margin-top: -100px;
+        transition: all 0.4s ease-in;
+    }
+
+    .list.active{
+        margin-top: 0;
+        transition: all 0.4s ease-in;
+    }
+
+    .search-and-user{
+        display: none;
+    }
 
 }
