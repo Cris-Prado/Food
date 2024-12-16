@@ -78,6 +78,7 @@
 .title{
     margin-top: 25px;
     font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
 }
 
 .pg1{
@@ -133,7 +134,11 @@
 }
 
 .about{
-    height: 100vh;
+    min-height: 100vh;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    width: 70%;
 }
 .footer{
     display: flex;
@@ -275,6 +280,7 @@
     width: 70%;
     font-size: 0.8rem;
     margin-top: 40px;
+    text-align: center;
 }
 
 .cards{
@@ -333,7 +339,121 @@
     font-size: 0.7em;
 }
   
+.promo-day{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 70%;
+}
 
+.promo-day .pg1{
+    width: 85%;
+}
+
+.mage-chefe{
+    height: 400px;
+}
+
+.experient{
+    margin: 35px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.wapper-exp{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.about-title{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.pg2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem; 
+}
+
+.contributions{
+    min-height: 70vh;
+    background-color: #4d4b4b;
+    width: 100%;
+    display: flex;
+    color: white;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-cont{
+    display: flex;
+    justify-content: center;
+}
+
+.pg3{
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    width: 50%;
+    text-align: center;
+}
+
+.wappper-cont{
+    border-radius: 35px 15px;
+    width: 450px;
+    margin-top: 2rem;
+    height: 250px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f2f3;
+}
+
+.pg4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem; 
+    width: 75%;
+    margin: 20px 0;
+    text-indent: 1.2rem;
+    text-align: justify;
+}
+
+.cont-icon{
+    position: absolute;
+    color: black;
+    width: 5rem;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: bisque;
+}
+
+.starcont{
+    margin-right: 300px;
+}
+
+.feedback{
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.pg5{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem; 
+    width: 75%;
+    margin: 20px 0;
+    text-indent: 1.2rem;
+    text-align: center;
+}
 @media (max-width: 760px) {
     .nav-bar{
         flex-direction: column;
