@@ -57,7 +57,3 @@ function nextImg(){
     }
     document.getElementById("radio"+conts+"C").checked = true;
 }
-
-// Envia Dados Formulario
-
-
