@@ -21,3 +21,7 @@ ul,li,a{
     font-family: 'Poppins', sans-serif;
     color: var(--text-primary);
 }
+
+fieldset{
+    border: 0;
+}

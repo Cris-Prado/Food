@@ -294,69 +294,110 @@
         <section class="contributions">
             <h2 class="title">contributions</h2>
             <p class="pg3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
-
-            <div class="card-cont">
-                <img src="/assets/Cristiano-foto-removebg-preview.png" alt="cristiano" class="cont-icon">
-               
-                <div class="wappper-cont">
-                    <div class="starcont">
-                        <img src="/assets/svg/star.svg">
-                        <img src="/assets/svg/star.svg">
-                        <img src="/assets/svg/star.svg">
-                        <img src="/assets/svg/star.svg">
-                        <img src="/assets/svg/star.svg">
+            <div class="slider">
+                <div class="slides">
+                    <!-- Radio  Buttons -->
+                    <input type="radio" name="radio-btn" id="radio1C">
+                    <input type="radio" name="radio-btn" id="radio2C">
+                    <!--Fim Do Radio Buttons-->
+        
+                    <!-- SLide Imagens -->
+                    <div class="slide first-contribuitions">
+                        <div class="menu ">
+                            <div class="card-cont">
+                                <img src="/assets/Cristiano-foto-removebg-preview.png" alt="cristiano" class="cont-icon">
+                               
+                                <div class="wappper-cont">
+                                    <div class="starcont">
+                                        <img src="/assets/svg/star.svg">
+                                        <img src="/assets/svg/star.svg">
+                                        <img src="/assets/svg/star.svg">
+                                        <img src="/assets/svg/star.svg">
+                                        <img src="/assets/svg/star.svg">
+                                    </div>
+                                    <p class="pg4">Lorem ipsum dolor sit amet consectetur. Tortor massa nisl quam sit. Vitae congue ultrices neque penatibus mi in quisque. Leo in cursus enim magnis ante. Proin iaculis platea ipsum sagittis ac eu aliquam quis. Ornare tincidunt tempus semper </p>
+                
+                                    <p class="pg2 user-cont"><strong>Cristiano Prado</strong></p>
+                                    <p class="pg2 desc-cont"><em>CEO and FullStak Developer Pleno</em></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p class="pg4">Lorem ipsum dolor sit amet consectetur. Tortor massa nisl quam sit. Vitae congue ultrices neque penatibus mi in quisque. Leo in cursus enim magnis ante. Proin iaculis platea ipsum sagittis ac eu aliquam quis. Ornare tincidunt tempus semper </p>
+                    <div class="slide">
+                        <div class="menu">
+                            <div class="card-cont">
+                                <img src="/assets/Emanoel-Prov-Perfil-removebg-preview.png" alt="cristiano" class="cont-icon">
+                               
+                                <div class="wappper-cont">
+                                    <div class="starcont">
+                                        <img src="/assets/svg/star.svg">
+                                        <img src="/assets/svg/star.svg">
+                                        <img src="/assets/svg/star.svg">
+                                        <img src="/assets/svg/star.svg">
+                                        <img src="/assets/svg/star.svg">
+                                    </div>
+                                    <p class="pg4">Lorem ipsum dolor sit amet consectetur. Tortor massa nisl quam sit. Vitae congue ultrices neque penatibus mi in quisque. Leo in cursus enim magnis ante. Proin iaculis platea ipsum sagittis ac eu aliquam quis. Ornare tincidunt tempus semper </p>
+                
+                                    <p class="pg2 user-cont"><strong>Emanoel Cesar</strong></p>
+                                    <p class="pg2 desc-cont"><em>CEO and Front-End Developer Junior</em></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fim SLide Imagens -->
+        
+                    <!-- Navigation Auto -->
+                     <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
 
-                    <p class="pg2 user-cont"><strong>Cristiano Prado</strong></p>
-                    <p class="pg2 desc-cont"><em>CEO and FullStak Developer</em></p>
+                     </div>
+                    <!-- Fim Navigation Auto -->
+                </div>
+                
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
                 </div>
             </div>
+
+            <br>
         </section>
         <section class="feedback">
             <h2 class="title">feedback</h2>
             <p class="pg5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa fugit nemo debitis fugiat minima.</p>
 
-            <form action="https://formsubmit.co/cesaremanoel412@gmail.com" class="formulario-feadback">
-
-                <label for="" class="label-feed">
-                    <span class="nome">Nome</span>
-                    <div class="inp-feed">
-                        <input  class="canp-feed" type="text" name="nome" id="nome" required  placeholder="Digite seu nome de usuario ">
-                    </div>
+            <form action="" method="post" class="form">
+                <label for="nome" class="lab-box">
+                    <span class="text-form">nome</span>
+                    <input type="text" name="nome" id="nome" class="inp" placeholder="Nome Completo...">
                 </label>
-
-                <label for="" class="label-feed">
-                    <span class="gmail">Email</span>
-                    <div class="inp-feed">
-                        <input class="canp-feed" type="email" id="email" required placeholder="digite seu email ">
-                    </div>
-                </label><br>
-                <h3>avalie nosso atendimento pelo numeros de estrela </h3>
-                <div class="av-estrela">
-                    <input type="radio" id="star1" class="star" >
-                    <label for="star1" title="1 estrela"></label>
-
-                    <input type="radio" id="star2" class="star" >
-                    <label for="star2" title="2 estrela"></label>
+                <label for="email" class="lab-box">
+                    <span class="text-form">email</span>
+                    <input type="email" name="email" id="email" class="inp" placeholder="Email...">
+                </label>
+                <div class="estrelinhas">
+                    <h4 class="text-form">nota</h4>
+                    <div class="star-rating">
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <label for="star5" title="5 estrelas">&#9733;</label>
                     
-                    <input type="radio" id="star3" class="star" >
-                    <label for="star3" title="3 estrela"></label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4" title="4 estrelas">&#9733;</label>
                     
-                    <input type="radio" id="star4" class="star" >
-                    <label for="star4" title="4 estrela"></label>
-
-                    <input type="radio" id="star5" class="star" >
-                    <label for="star5" title="5 estrela"></label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3" title="3 estrelas">&#9733;</label>
+                    
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2" title="2 estrelas">&#9733;</label>
+                    
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1" title="1 estrela">&#9733;</label>
+                      </div>
                 </div>
-
-                <h3>Diga-nos oque achou do nosso trabalho</h3>
-                
-                <textarea  name="feed" id="texterema"></textarea>
-
-                <button class="btfe">Enviar</button>
-
-            </form>
+                <textarea name="textform" id="textform" class="textarea" placeholder="Deixe seu Feedback"></textarea>
+                <button value="Enviar" type="submit" name="enviafeed" class="btnform" onclick="envOk()">Enviar</button>
+            </form><br>
         </section>
     </main>
     <footer class="footer">
